@@ -1,0 +1,115 @@
+<html><head>
+    <title>Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzeria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Suggest Topping</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewblock">
+        <div class="img_div"> 
+            <img class="img-responsive" src="pizza.png">
+        </div>
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+           <div id="display_menu"></div>
+        </div>
+    </div>
+    
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?"> <br><br>
+			<button onclick="add_top()">Add Suggestion</button><br><br>
+            <button id="add_toppings" onclick="add_item()">Show Pizza</button>
+        </div>
+		
+        <div class="block2">
+            <div id="display_addedmenu">
+            </div>
+        </div>
+        
+    </div>
+
+    <div>
+        <img class="img-responsive" src="topping.png">
+    </div>
+<center><h1>how to make veg pizza</h1>
+    <div id="pizza_withoutoven">
+    <h2>Ingredients</h2>
+    <h3>For Pizza Base</h3>
+    <h4>2 Cups of maida or all purpose flour, 
+        1/4 Cup water, 
+        1/2 Tsp oregano, 
+        1 and 1/2 Tsp active dry yeast, 
+        1 Tsp sugar, 
+        1/2 Tsp oil, 
+        Some corn meal Makke ka aata, 
+        Some more water for kneading, 
+        Salt to taste, </h4>
+        <h3>For Pizza Sauce</h3>
+        <h4>2 Big tomatoes, 
+            1 Big onion, 
+            10 cloves of garlic, 
+            5 Kashmiri red chilies, 
+            Some crushed black pepper, 
+            2 Tbsp tomato ketchup, 
+            1/2 Tsp red chili powder, 
+            1 Tsp sugar, 
+            1/2 Tsp oregano, 
+            2 Tbsp oil, 
+            Salt to taste, </h4>
+            <h3>For Topping</h3>
+            <h4>1 Small red bell pepper – sliced, 
+                1 Small green bell pepper or capsicum, 
+                1/4 Cup sliced black olives, 
+                1 Small onion sliced, 
+                1/8 Cup boiled sweetcorn, 
+                2-3 Cheese slices, 
+                60-70 gm mozzarella cheese, 
+                Some chili flakes and Oregano, </h4>
+                <h2>Instructions</h2>
+                <h3>To Make Dough</h3>
+                <h4>1.To activate the yeast, mix 1 tsp sugar with 1/4 cup of warm (not hotwater. Then add 1 & 1/2 tsp active dry yeast and mix well. Cover and keep it aside for 10 min.
+                    2.After 10 min, the yeast should froth up.
+                    3.Now, in a big bowl, take 2 cup plain flour (maida). Add some salt to taste, 1/2 tsp oregano and mix all the dry ingredients well.
+                    4.Add yeast mixture to the bowl and make a medium soft dough by adding a litter water at a time.
+                    5.Knead this dough for 10-15 min and add a splash of water if you feel the dough has become dry.
+                    6.Apply 1/2 tsp oil on the finished dough and keep it aside in a warm place by covering it using a damp cloth. After approximately 1 hr, the dough should double up in size.</h4>
+                    <h3>To Make Sauce</h3>
+<h4>1.Boil 2 big tomatoes, 1 big onion, 10 cloves of garlic and 5 Kashmiri red chilies. Let this come to room temperature and remove the tomato skin and eye portion.
+                        2.Grind all above boiled ingredients in a smooth paste.
+                        3.Heat 2 tbsp oil in a pan and add little bit of puree followed by 1/2 tsp red chili powder. Fry it for a few seconds.
+                        4.Add remaining puree and cook till sauce thickens a bit.
+                        5.Add 1/2 tsp oregano, 1 tsp sugar, 2 tbsp tomato ketchup and some salt to taste.
+                        6.Cook it for few seconds. The sauce is now ready. Let it cool to room temperature.</h4>
+                        <h3>To Assemble the Pizza</h3>
+                        <h4>1.Take the dough out of the bowl after 1 hour of rest and knead it for few seconds.
+                            2.Take a portion of dough depending on the size of pizza plate you have. Cover it with a damp cloth and keep it aside for 10 min.
+                            3.After 10 min, sprinkle some corn meal (makke ka attor plain flour (maidon the table top and start flattening the dough using your fingers. You can also use rolling pin to do this.
+                            4.Place the base in the pizza tray and press the base along the side of the plate.
+                            5.Spread some pizza sauce on the base. Add some pieces of processed cheese slices over the sauce followed by some grated/chopped mozzarella cheese.
+                            6.Put some boiled sweetcorn, sliced red and green bell peppers, sliced onions and some black olives.</h4>
+                            <h3>To Bake the Pizza</h3>
+                            <h4>1.We are using a homemade oven for this recipe. To make this, take a large kadhai or a vessel and add a layer of salt (or sanat the bottom.
+                                2.Place a ring over the salt layer and cover it with a lid. Preheat it on a high flame for 15 min.
+                                3.Gently place the pizza plate on the ring, place the lid back on it. Bake this pizza for 10-15 min on a high flame.
+                                4.After 10-15 min, the pizza crust should become golden in color.
+                                5.Cut the pizza in 4-6 pieces depending on the size. Top it up with some oregano and chili flakes and dig in. Enjoy!</h4>
+                            </div>
+
+    </center>
+
+
+</body></html>
